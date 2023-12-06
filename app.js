@@ -4,8 +4,8 @@ const port = 8080;
 
 app.use('/index2',express.static("views"))
 app.get('/', (req, res) => res.send('Hello Wellcome WeThink Cloud by admin!!!'));
-app.get('/index/', (req, res) =>{
-    res.render("index.html")
+app.get('/index', (req, res) =>{
+    res.render("views/index.html")
 });
 app.listen(port);
 console.log(`App running on http://localhost:${port}`);
